@@ -11,7 +11,7 @@ package SHS.Models;
 public class NewClass {
     
     public static void NewClass() {
-        System.out.println("Hello World!");
+        System.out.println("Hello Worldsss!");
     }
 }
 
