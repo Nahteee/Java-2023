@@ -38,7 +38,7 @@ public class confirmpayment extends javax.swing.JFrame {
         sbut1 = new javax.swing.JButton();
         sbut = new javax.swing.JButton();
         ctlab4 = new javax.swing.JLabel();
-        CNTXT = new javax.swing.JTextField();
+        CNTXTaa = new javax.swing.JTextField();
         eatxt = new javax.swing.JTextField();
         cntxt = new javax.swing.JTextField();
 
@@ -77,7 +77,7 @@ public class confirmpayment extends javax.swing.JFrame {
         ctlab4.setFont(new java.awt.Font("Hiragino Sans GB", 1, 16)); // NOI18N
         ctlab4.setText("Contact Number : ");
 
-        CNTXT.setText("jTextField1");
+        CNTXTaa.setText("jTextField1");
 
         eatxt.setText("jTextField1");
 
@@ -106,7 +106,7 @@ public class confirmpayment extends javax.swing.JFrame {
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(ctlab1)
                                 .addGap(18, 18, 18)
-                                .addComponent(CNTXT, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(CNTXTaa, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(ctlab4)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -133,7 +133,7 @@ public class confirmpayment extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(ctlab1)
-                    .addComponent(CNTXT, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(CNTXTaa, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(ctlab3)
@@ -185,11 +185,11 @@ public class confirmpayment extends javax.swing.JFrame {
             String card;
             String address;
 
-            card = CNTXT.getText();
+            card = CNTXTaa.getText();
             contact = cntxt.getText();
             address = eatxt.getText();
 
-            if( CNTXT.getText().isEmpty() || cntxt.getText().isEmpty() || eatxt.getText().isEmpty()){
+            if( CNTXTaa.getText().isEmpty() || cntxt.getText().isEmpty() || eatxt.getText().isEmpty()){
                 JOptionPane.showMessageDialog(null,"Text Field Cannot Be Empty!" , "TextField Empty",JOptionPane.ERROR_MESSAGE,null);
             }else{
 
@@ -200,44 +200,11 @@ public class confirmpayment extends javax.swing.JFrame {
 
                 
     }//GEN-LAST:event_sbutActionPerformed
-
-    /**
-     * @param args the command line arguments
-     */
-        //public static void (String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(confirmpayment.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(confirmpayment.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(ConfirmPayment.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(confirmpayment.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new confirmpayment().setVisible(true);
-            }
-        });
-    }
+        }}
+        
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JTextField CNTXT;
+    private javax.swing.JTextField CNTXTaa;
     private javax.swing.JTextField cntxt;
     private javax.swing.JLabel ctlab1;
     private javax.swing.JLabel ctlab2;
